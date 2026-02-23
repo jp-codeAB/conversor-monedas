@@ -35,10 +35,10 @@ Se utilizó metodología Kanban para la gestión del proyecto.
 
 Trello
 Columnas empleadas:
-Backlog
-En Desarrollo
-Pausado
-Concluido 
+- Backlog
+- En Desarrollo
+- Pausado
+- Concluido 
 
 ## 🏗 Arquitectura del Proyecto
 
@@ -96,4 +96,5 @@ public record ExchangeRateResponse(
         double conversion_result
 ) {}
 ```
+
 
