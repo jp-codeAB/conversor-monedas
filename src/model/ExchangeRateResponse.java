@@ -1,10 +1,9 @@
 package model;
 
-public class ExchangeRateResponse {
-
-    private String result;
-    private String base_code;
-    private String target_code;
-    private double conversion_rate;
-
-}
+public record ExchangeRateResponse(
+        String result,
+        String base_code,
+        String target_code,
+        double conversion_rate,
+        double conversion_result
+) {}
