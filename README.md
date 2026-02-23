@@ -19,6 +19,27 @@ La aplicación está estructurada siguiendo principios de **arquitectura por cap
 
 ---
 
+🛠 Tecnologías Utilizadas
+
+| Tecnología | Versión          | 
+|--------------------------|-------------------------|
+| Java          | 21   |          
+| Libreria Gson | l2.13.2   | 
+
+---
+📋 Metodología de Trabajo
+
+Se utilizó metodología Kanban para la gestión del proyecto.
+
+🗂 Herramienta utilizada:
+
+Trello
+Columnas empleadas:
+Backlog
+En Desarrollo
+Pausado
+Concluido 
+
 ## 🏗 Arquitectura del Proyecto
 
 El sistema sigue una arquitectura desacoplada en capas:
@@ -65,3 +86,14 @@ Ejemplo real:
 🧠 Modelo de Datos (Record)
 
 Se utiliza record de Java 21 para representar la respuesta de la API:
+usando record para Inmutabilidad
+```
+public record ExchangeRateResponse(
+        String result,
+        String base_code,
+        String target_code,
+        double conversion_rate,
+        double conversion_result
+) {}
+```
+
