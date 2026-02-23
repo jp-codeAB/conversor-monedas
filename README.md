@@ -1,5 +1,3 @@
-﻿# conversor-monedas
-
 # 💱 Conversor de Monedas - Java 21
 
 Aplicación de consola desarrollada en **Java 21** bajo el paradigma de **Programación Orientada a Objetos (POO)** que consume la **Exchange Rate API** para realizar conversiones de monedas en tiempo real.
@@ -88,5 +86,6 @@ Ejemplo real:
 🧠 Modelo de Datos (Record)
 
 Se utiliza record de Java 21 para representar la respuesta de la API:
+
 
 
