@@ -36,11 +36,31 @@ Cada capa tiene una responsabilidad clara:
 ---
 
 ## 📂 Estructura de Carpetas
-```
-├── MsvcApplication.java
-├── service/
-│       ├── CurrencyService
-├── model/
-│   │   ├── ExchangeRateResponse.java
+![carpetas](./img/diagramatec.png)
 
-```
+
+---
+
+## 🌍 API Utilizada
+
+### 🔗 Exchange Rate API
+
+Se utiliza la API pública:
+https://v6.exchangerate-api.com/v6/{API_KEY}/pair/{BASE}/{TARGET}/{AMOUNT}
+
+
+Ejemplo real:
+### Ejemplo de respuesta JSON:
+
+```json
+{
+  "result": "success",
+  "base_code": "USD",
+  "target_code": "COP",
+  "conversion_rate": 3703.6183,
+  "conversion_result": 370361.83
+}
+
+🧠 Modelo de Datos (Record)
+
+Se utiliza record de Java 21 para representar la respuesta de la API:
