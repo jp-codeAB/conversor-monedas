@@ -36,7 +36,7 @@ Cada capa tiene una responsabilidad clara:
 ---
 
 ## 📂 Estructura de Carpetas
-![carpetas](./img/diagramatec.png)
+![carpetas](./img/carpetas.png)
 
 
 ---
@@ -60,6 +60,7 @@ Ejemplo real:
   "conversion_rate": 3703.6183,
   "conversion_result": 370361.83
 }
+```
 
 🧠 Modelo de Datos (Record)
 
