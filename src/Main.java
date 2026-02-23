@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        // creación de objetos
         Scanner sc = new Scanner(System.in);
         CurrencyService service = new CurrencyService();
         int option = 0;
 
+        // Menu de opciones
         String menu = """
                 ***************************************************
                       Sea bienvenid@ al Conversor de Monedas
@@ -34,6 +36,8 @@ public class Main {
                 System.out.print("Ingrese el valor que desea convertir: ");
                 double amount = Double.parseDouble(sc.nextLine());
 
+                //Casos disponibles para conversion
+                // Añadí una conversión de moneda más de Euro a Dólar y viceversa
                 switch (option) {
                     case 1 -> service.executeConversion("USD", "ARS", amount);
                     case 2 -> service.executeConversion("ARS", "USD", amount);
@@ -45,6 +49,7 @@ public class Main {
                     case 8 -> service.executeConversion("EUR", "USD", amount);
                     default -> System.out.println("Opción no válida.");
                 }
+            //Manejo de error para un dato diferente de tipo numerico
             } catch (NumberFormatException e) {
                 System.out.println("Por favor, ingrese un número válido.");
             }
