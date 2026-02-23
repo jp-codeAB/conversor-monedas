@@ -65,3 +65,4 @@ Ejemplo real:
 🧠 Modelo de Datos (Record)
 
 Se utiliza record de Java 21 para representar la respuesta de la API:
+
