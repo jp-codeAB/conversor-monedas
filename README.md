@@ -1,5 +1,3 @@
-﻿# conversor-monedas
-
 # 💱 Conversor de Monedas - Java 21
 
 Aplicación de consola desarrollada en **Java 21** bajo el paradigma de **Programación Orientada a Objetos (POO)** que consume la **Exchange Rate API** para realizar conversiones de monedas en tiempo real.
@@ -18,6 +16,27 @@ Este proyecto implementa un conversor de monedas interactivo en consola que perm
 La aplicación está estructurada siguiendo principios de **arquitectura por capas**, separación de responsabilidades y buenas prácticas de **Clean Code**.
 
 ---
+## 📋 Metodología de Trabajo
+
+Se utilizó metodología Kanban para la gestión del proyecto.
+
+🗂 Herramienta utilizada:
+
+Trello: https://trello.com/b/RU41cvaQ/conversor-de-moneda-challenge-one-java-back-end
+
+Columnas empleadas:
+- Backlog
+- En Desarrollo
+- Pausado
+- Concluido
+  
+---
+## 🛠 Tecnologías Utilizadas
+
+| Tecnología | Versión |
+|------|----------------|
+| Java | 21 |
+| Librería Gson | 2.13.2 |
 
 ## 🏗 Arquitectura del Proyecto
 
@@ -28,9 +47,9 @@ Cada capa tiene una responsabilidad clara:
 | Capa | Responsabilidad |
 |------|----------------|
 | `Main` | Interacción con el usuario |
-| `CurrencyService` | Reglas de negocio |
-| `ExchangeRateClient` | Comunicación con la API |
-| `JsonParserUtil` | Conversión JSON ↔ Objetos |
+| `service` | Reglas de negocio |
+| `client` | Comunicación con la API |
+| `util` | Conversión JSON ↔ Objetos |
 | `model` | Representación de datos |
 
 ---
@@ -61,8 +80,21 @@ Ejemplo real:
   "conversion_result": 370361.83
 }
 ```
-
+---
 🧠 Modelo de Datos (Record)
 
-Se utiliza record de Java 21 para representar la respuesta de la API:
+Se utiliza record de Java 21 para representar la respuesta de la API, este uso de debe a la Inmutalidad del record.
+```
+public record ExchangeRateResponse(
+        String result,
+        String base_code,
+        String target_code,
+        double conversion_rate,
+        double conversion_result
+) {}
+```
+
+## 🖥 Ejecución
+
+
 
