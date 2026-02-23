@@ -22,7 +22,7 @@ Se utilizó metodología Kanban para la gestión del proyecto.
 
 🗂 Herramienta utilizada:
 
-Trello
+Trello: https://trello.com/b/RU41cvaQ/conversor-de-moneda-challenge-one-java-back-end
 
 Columnas empleadas:
 - Backlog
@@ -95,5 +95,6 @@ public record ExchangeRateResponse(
 ```
 
 ## 🖥 Ejecución
+
 
 
