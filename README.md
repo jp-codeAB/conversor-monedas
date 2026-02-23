@@ -83,8 +83,7 @@ Ejemplo real:
 
 ## 🧠 Modelo de Datos (Record)
 
-Se utiliza record de Java 21 para representar la respuesta de la API:
-usando record para Inmutabilidad
+Se utiliza record de Java 21 para representar la respuesta de la API su uso de debe a la Inmutabilidad
 ```
 public record ExchangeRateResponse(
         String result,
@@ -95,5 +94,6 @@ public record ExchangeRateResponse(
 ) {}
 ```
 
+## 🖥  Ejecución
 
 
