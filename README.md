@@ -16,7 +16,7 @@ Este proyecto implementa un conversor de monedas interactivo en consola que perm
 La aplicación está estructurada siguiendo principios de **arquitectura por capas**, separación de responsabilidades y buenas prácticas de **Clean Code**.
 
 ---
-##📋 Metodología de Trabajo
+## 📋 Metodología de Trabajo
 
 Se utilizó metodología Kanban para la gestión del proyecto.
 
@@ -80,12 +80,20 @@ Ejemplo real:
   "conversion_result": 370361.83
 }
 ```
-## 🖥 Ejecución
-
-
+---
 🧠 Modelo de Datos (Record)
 
-Se utiliza record de Java 21 para representar la respuesta de la API:
+Se utiliza record de Java 21 para representar la respuesta de la API, este uso de debe a la Inmutalidad del record.
+```
+public record ExchangeRateResponse(
+        String result,
+        String base_code,
+        String target_code,
+        double conversion_rate,
+        double conversion_result
+) {}
+```
 
+## 🖥 Ejecución
 
 
