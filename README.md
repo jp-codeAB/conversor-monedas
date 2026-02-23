@@ -1,5 +1,3 @@
-﻿# conversor-monedas
-
 # 💱 Conversor de Monedas - Java 21
 
 Aplicación de consola desarrollada en **Java 21** bajo el paradigma de **Programación Orientada a Objetos (POO)** que consume la **Exchange Rate API** para realizar conversiones de monedas en tiempo real.
@@ -19,15 +17,15 @@ La aplicación está estructurada siguiendo principios de **arquitectura por cap
 
 ---
 
-🛠 Tecnologías Utilizadas
+## 🛠 Tecnologías Utilizadas
 
 | Tecnología | Versión          | 
 |--------------------------|-------------------------|
 | Java          | 21   |          
-| Libreria Gson | l2.13.2   | 
+| Libreria Gson | 2.13.2   | 
 
 ---
-📋 Metodología de Trabajo
+## 📋 Metodología de Trabajo
 
 Se utilizó metodología Kanban para la gestión del proyecto.
 
@@ -83,7 +81,7 @@ Ejemplo real:
 }
 ```
 
-🧠 Modelo de Datos (Record)
+## 🧠 Modelo de Datos (Record)
 
 Se utiliza record de Java 21 para representar la respuesta de la API:
 usando record para Inmutabilidad
@@ -96,5 +94,6 @@ public record ExchangeRateResponse(
         double conversion_result
 ) {}
 ```
+
 
 
