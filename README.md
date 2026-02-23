@@ -18,6 +18,27 @@ Este proyecto implementa un conversor de monedas interactivo en consola que perm
 La aplicación está estructurada siguiendo principios de **arquitectura por capas**, separación de responsabilidades y buenas prácticas de **Clean Code**.
 
 ---
+##📋 Metodología de Trabajo
+
+Se utilizó metodología Kanban para la gestión del proyecto.
+
+🗂 Herramienta utilizada:
+
+Trello
+
+Columnas empleadas:
+- Backlog
+- En Desarrollo
+- Pausado
+- Concluido
+  
+---
+## 🛠 Tecnologías Utilizadas
+
+| Tecnología | Versión |
+|------|----------------|
+| Java | 21 |
+| Librería Gson | 2.13.2 |
 
 ## 🏗 Arquitectura del Proyecto
 
@@ -28,9 +49,9 @@ Cada capa tiene una responsabilidad clara:
 | Capa | Responsabilidad |
 |------|----------------|
 | `Main` | Interacción con el usuario |
-| `CurrencyService` | Reglas de negocio |
-| `ExchangeRateClient` | Comunicación con la API |
-| `JsonParserUtil` | Conversión JSON ↔ Objetos |
+| `service` | Reglas de negocio |
+| `client` | Comunicación con la API |
+| `util` | Conversión JSON ↔ Objetos |
 | `model` | Representación de datos |
 
 ---
@@ -61,8 +82,11 @@ Ejemplo real:
   "conversion_result": 370361.83
 }
 ```
+## 🖥 Ejecución
+
 
 🧠 Modelo de Datos (Record)
 
 Se utiliza record de Java 21 para representar la respuesta de la API:
+
 
